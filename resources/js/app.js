@@ -38,6 +38,18 @@ $(document).ready(function() {
         ringtone     : document.getElementById('ringtone'),
         ringbacktone : document.getElementById('ringbacktone'),
         dtmfTone     : document.getElementById('dtmfTone'),
+        dtmf0        : document.getElementById('dtmf-0'),
+        dtmf1        : document.getElementById('dtmf-1'),
+        dtmf2        : document.getElementById('dtmf-2'),
+        dtmf3        : document.getElementById('dtmf-3'),
+        dtmf4        : document.getElementById('dtmf-4'),
+        dtmf5        : document.getElementById('dtmf-5'),
+        dtmf6        : document.getElementById('dtmf-6'),
+        dtmf7        : document.getElementById('dtmf-7'),
+        dtmf8        : document.getElementById('dtmf-8'),
+        dtmf9        : document.getElementById('dtmf-9'),
+        dtmfpound    : document.getElementById('dtmf-pound'),
+        dtmfstar     : document.getElementById('dtmf-star'),
 
         Sessions     : [],
         callTimers   : {},
@@ -497,8 +509,48 @@ newSess.on('trackAdded', function() {
         },
 
         sipSendDTMF : function(digit) {
-
-            try { ctxSip.dtmfTone.play(); } catch(e) { }
+            //There's a better way of doing this... Objects?
+            switch(digit) {
+              case 0:
+                try { ctxSip.dtmf0.play(); } catch(e) { }
+                break;
+              case 1:
+                try { ctxSip.dtmf1.play(); } catch(e) { }
+                break;
+              case 2:
+                try { ctxSip.dtmf2.play(); } catch(e) { }
+                break;
+              case 3:
+                try { ctxSip.dtmf3.play(); } catch(e) { }
+                break;
+              case 4:
+                try { ctxSip.dtmf4.play(); } catch(e) { }
+                break;
+              case 5:
+                try { ctxSip.dtmf5.play(); } catch(e) { }
+                break;
+              case 6:
+                try { ctxSip.dtmf6.play(); } catch(e) { }
+                break;
+              case 7:
+                try { ctxSip.dtmf7.play(); } catch(e) { }
+                break;
+              case 8:
+                try { ctxSip.dtmf8.play(); } catch(e) { }
+                break;
+              case 9:
+                try { ctxSip.dtmf9.play(); } catch(e) { }
+                break;
+              case '*':
+                try { ctxSip.dtmfstar.play(); } catch(e) { }
+                break;
+              case '#':
+                try { ctxSip.dtmfpound.play(); } catch(e) { }
+                break;
+              default :
+                try { ctxSip.dtmfTone.play(); } catch(e) { }
+                break;
+            }
 
             var a = ctxSip.callActiveID;
             if (a) {

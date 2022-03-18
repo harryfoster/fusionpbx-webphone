@@ -136,6 +136,19 @@ echo "</div>\n";
 echo "<audio id='ringtone' src='resources/sounds/incoming.mp3' loop></audio>\n";
 echo "<audio id='ringbacktone' src='resources/sounds/outgoing.mp3' loop></audio>\n";
 echo "<audio id='dtmfTone' src='resources/sounds/dtmf.mp3'></audio>\n";
+echo "<audio id='dtmf-0' src='resources/sounds/dtmf-0.mp3'></audio>\n";
+echo "<audio id='dtmf-1' src='resources/sounds/dtmf-1.mp3'></audio>\n";
+echo "<audio id='dtmf-2' src='resources/sounds/dtmf-2.mp3'></audio>\n";
+echo "<audio id='dtmf-3' src='resources/sounds/dtmf-3.mp3'></audio>\n";
+echo "<audio id='dtmf-4' src='resources/sounds/dtmf-4.mp3'></audio>\n";
+echo "<audio id='dtmf-5' src='resources/sounds/dtmf-5.mp3'></audio>\n";
+echo "<audio id='dtmf-6' src='resources/sounds/dtmf-6.mp3'></audio>\n";
+echo "<audio id='dtmf-7' src='resources/sounds/dtmf-7.mp3'></audio>\n";
+echo "<audio id='dtmf-8' src='resources/sounds/dtmf-8.mp3'></audio>\n";
+echo "<audio id='dtmf-9' src='resources/sounds/dtmf-9.mp3'></audio>\n";
+echo "<audio id='dtmf-pound' src='resources/sounds/dtmf-pound.mp3'></audio>\n";
+echo "<audio id='dtmf-star' src='resources/sounds/dtmf-star.mp3'></audio>\n";
+
 echo "<audio id='audioRemote'></audio>\n";
 
 echo "<script type='text/javascript' src='/resources/jquery/jquery.min.js.php'></script>\n";
