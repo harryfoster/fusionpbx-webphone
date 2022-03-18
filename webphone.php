@@ -140,6 +140,7 @@ echo "<audio id='audioRemote'></audio>\n";
 
 echo "<script type='text/javascript' src='/resources/jquery/jquery.min.js.php'></script>\n";
 echo "<script type='text/javascript' src='/resources/bootstrap/js/bootstrap.min.js.php'></script>\n";
+echo "<script type='text/javascript' src='resources/js/popper.min.js'></script>\n";
 echo "<script type='text/javascript' src='/resources/momentjs/moment-with-locales.min.js.php'></script>\n";
 
 echo "<script type='text/javascript' src='resources/js/SIP.js/sip.min.js'></script>\n";
